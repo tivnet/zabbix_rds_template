@@ -24,7 +24,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;CPUUtilization&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;CPUUtilization&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -63,7 +63,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;DatabaseConnections&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;DatabaseConnections&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -102,7 +102,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;DiskQueueDepth&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;DiskQueueDepth&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -141,7 +141,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;FreeableMemory&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;FreeableMemory&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -180,7 +180,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;FreeStorageSpace&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;FreeStorageSpace&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -219,7 +219,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;ReadIOPS&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;ReadIOPS&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -258,7 +258,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;ReadLatency&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;ReadLatency&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -297,7 +297,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;ReadThroughput&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;ReadThroughput&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -336,7 +336,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;SwapUsage&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;SwapUsage&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -375,7 +375,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;WriteIOPS&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;WriteIOPS&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -414,7 +414,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;WriteLatency&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;WriteLatency&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -453,7 +453,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rds_stats[&quot;--metric&quot;,&quot;WriteThroughput&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                    <key>rds_stats.py[&quot;--metric&quot;,&quot;WriteThroughput&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -764,7 +764,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template AWS RDS:rds_stats[&quot;--metric&quot;,&quot;CPUUtilization&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;].avg(#2)}&gt;85</expression>
+            <expression>{Template AWS RDS:rds_stats.py[&quot;--metric&quot;,&quot;CPUUtilization&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;].avg(#2)}&gt;85</expression>
             <name>High CPU on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -802,7 +802,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;CPUUtilization&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;CPUUtilization&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -834,7 +834,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;DatabaseConnections&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;DatabaseConnections&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -866,7 +866,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;DiskQueueDepth&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;DiskQueueDepth&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -898,7 +898,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;FreeableMemory&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;FreeableMemory&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -930,7 +930,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;FreeStorageSpace&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;FreeStorageSpace&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -962,7 +962,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;ReadIOPS&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;ReadIOPS&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -994,7 +994,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;ReadLatency&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;ReadLatency&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1026,7 +1026,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;ReadThroughput&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;ReadThroughput&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1058,7 +1058,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;SwapUsage&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;SwapUsage&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1090,7 +1090,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;WriteIOPS&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;WriteIOPS&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1122,7 +1122,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;WriteLatency&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;WriteLatency&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1154,7 +1154,7 @@
                     <type>0</type>
                     <item>
                         <host>Template AWS RDS</host>
-                        <key>rds_stats[&quot;--metric&quot;,&quot;WriteThroughput&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
+                        <key>rds_stats.py[&quot;--metric&quot;,&quot;WriteThroughput&quot;,&quot;--instance-id&quot;,&quot;{HOST.HOST}&quot;,&quot;--access-key&quot;,&quot;{$AWS_ACCESS_KEY}&quot;,&quot;--secret-key&quot;,&quot;{$AWS_SECRET_KEY}&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
