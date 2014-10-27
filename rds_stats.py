@@ -98,6 +98,5 @@ for k,vh in metrics.items():
         if vh["type"] == "int":
                 metrics[k]["value"] = "%i" % average
 
-        #print "metric %s %s %s" % (k, vh["type"], vh["value"])
         print "%s" % (vh["value"])
         break                                                                                                                                                                                                     1,1           Top
