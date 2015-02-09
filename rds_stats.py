@@ -54,6 +54,7 @@ metrics = {"CPUUtilization":{"type":"float", "value":None},
     "DiskQueueDepth":{"type":"float", "value":None},
     "NetworkReceiveThroughput":{"type":"float", "value":None},
     "NetworkTransmitThroughput":{"type":"float", "value":None},
+    "ReplicaLag":{"type":"int", "value":None},
     "FreeStorageSpace":{"type":"float", "value":None}}
 
 end = datetime.datetime.now()
