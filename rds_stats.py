@@ -79,4 +79,4 @@ for k,vh in metrics.items():
                 metrics[k]["value"] = "%i" % average
 
         print "%s" % (vh["value"])
-        break                                                                                                                                                                                                     1,1           Top
+        break
