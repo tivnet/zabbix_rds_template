@@ -2,7 +2,7 @@
 import datetime
 import sys
 from optparse import OptionParser
-import boto.ec2.cloudwatch
+import boto3
 
 ### Arguments
 parser = OptionParser()
@@ -50,27 +50,27 @@ metrics = {"CPUUtilization":{"type":"float", "value":None},
 end = datetime.datetime.utcnow()
 start = end - datetime.timedelta(minutes=5)
 
-#get the region
+### Zabbix hack for supporting FQDN addresses
+### This is useful if you have instances with the same nam but in diffrent AWS locations (i.e. db1 in eu-central-1 and db1 in us-east-1)
+if "." in options.instance_id:
+    options.instance_id = options.instance_id.split(".")[0]
+
+### Get the region
 if (options.region == None):
     options.region = 'us-east-1'
-    
-for r in boto.ec2.cloudwatch.regions():
-   if (r.name == options.region):
-      region = r
-      break
 
-conn = boto.ec2.cloudwatch.CloudWatchConnection(options.access_key, options.secret_key,region=region)
+conn = boto3.client('cloudwatch', aws_access_key_id=options.access_key, aws_secret_access_key=options.secret_key, region_name=options.region)
 
 for k,vh in metrics.items():
 
     if (k == options.metric):
 
         try:
-                res = conn.get_metric_statistics(60, start, end, k, "AWS/RDS", "Average", {"DBInstanceIdentifier": options.instance_id})
+                res = conn.get_metric_statistics(Namespace="AWS/RDS", MetricName=k, Dimensions=[{'Name': "DBInstanceIdentifier", 'Value': options.instance_id}], StartTime=start, EndTime=end, Period=60, Statistics=["Average"])
         except Exception, e:
                 print "status err Error running rds_stats: %s" % e.error_message
                 sys.exit(1)
-        average = res[-1]["Average"] # last item in result set
+        average = res.get('Datapoints')[-1].get('Average') # last item in result set
         if (k == "FreeStorageSpace" or k == "FreeableMemory"):
                 average = average / 1024.0**3.0
         if vh["type"] == "float":
