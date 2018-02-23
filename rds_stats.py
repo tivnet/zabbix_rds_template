@@ -8,26 +8,27 @@ import boto3
 parser = OptionParser()
 parser.add_option("-i", "--instance-id", dest="instance_id",
                 help="DBInstanceIdentifier")
-parser.add_option("-a", "--access-key", dest="access_key",
+parser.add_option("-a", "--access-key", dest="access_key", default=None,
                 help="AWS Access Key")
-parser.add_option("-k", "--secret-key", dest="secret_key",
+parser.add_option("-k", "--secret-key", dest="secret_key", default=None,
                 help="AWS Secret Access Key")
 parser.add_option("-m", "--metric", dest="metric",
                 help="RDS cloudwatch metric")
-parser.add_option("-r", "--region", dest="region",
+parser.add_option("-r", "--region", dest="region", default="us-east-1"
                 help="RDS region")
 
 (options, args) = parser.parse_args()
 
 if (options.instance_id == None):
     parser.error("-i DBInstanceIdentifier is required")
-if (options.access_key == None):
-    parser.error("-a AWS Access Key is required")
-if (options.secret_key == None):
-    parser.error("-k AWS Secret Key is required")
 if (options.metric == None):
     parser.error("-m RDS cloudwatch metric is required")
 ###
+
+if (options.access_key == None) or (options.secret_key == None):
+    use_roles = True
+else:
+    use_roles = False
 
 ### Real code
 metrics = {"CPUUtilization":{"type":"float", "value":None},
@@ -55,11 +56,10 @@ start = end - datetime.timedelta(minutes=5)
 if "." in options.instance_id:
     options.instance_id = options.instance_id.split(".")[0]
 
-### Get the region
-if (options.region == None):
-    options.region = 'us-east-1'
-
-conn = boto3.client('cloudwatch', aws_access_key_id=options.access_key, aws_secret_access_key=options.secret_key, region_name=options.region)
+if use_roles:
+    conn = boto3.client('cloudwatch', region_name=options.region)
+else:
+    conn = boto3.client('cloudwatch', aws_access_key_id=options.access_key, aws_secret_access_key=options.secret_key, region_name=options.region)
 
 for k,vh in metrics.items():
 
@@ -67,10 +67,15 @@ for k,vh in metrics.items():
 
         try:
                 res = conn.get_metric_statistics(Namespace="AWS/RDS", MetricName=k, Dimensions=[{'Name': "DBInstanceIdentifier", 'Value': options.instance_id}], StartTime=start, EndTime=end, Period=60, Statistics=["Average"])
-        except Exception, e:
-                print "status err Error running rds_stats: %s" % e.error_message
+        except Exception as e:
+                print("status err Error running rds_stats: %s" % e.error_message)
                 sys.exit(1)
-        average = res.get('Datapoints')[-1].get('Average') # last item in result set
+        datapoints = res.get('Datapoints')
+        if len(datapoints) == 0:
+            print("Could not find datapoints for specified instance. Please review if provided instance (%s) and region (%s) are correct" % (options.instance_id, options.region)) # probably instance-id is wonrg
+            continue
+
+        average = datapoints[-1].get('Average') # last item in result set
         if (k == "FreeStorageSpace" or k == "FreeableMemory"):
                 average = average / 1024.0**3.0
         if vh["type"] == "float":
@@ -79,5 +84,5 @@ for k,vh in metrics.items():
                 metrics[k]["value"] = "%i" % average
 
         #print "metric %s %s %s" % (k, vh["type"], vh["value"])
-        print "%s" % (vh["value"])
+        print("%s" % (vh["value"]))
         break
