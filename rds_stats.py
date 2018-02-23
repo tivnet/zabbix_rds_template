@@ -21,10 +21,6 @@ parser.add_option("-r", "--region", dest="region", default="us-east-1"
 
 if (options.instance_id == None):
     parser.error("-i DBInstanceIdentifier is required")
-#if (options.access_key == None):
-#    parser.error("-a AWS Access Key is required")
-#if (options.secret_key == None):
-#    parser.error("-k AWS Secret Key is required")
 if (options.metric == None):
     parser.error("-m RDS cloudwatch metric is required")
 ###
