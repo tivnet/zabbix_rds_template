@@ -8,9 +8,9 @@ import boto3
 parser = OptionParser()
 parser.add_option("-i", "--instance-id", dest="instance_id",
                 help="DBInstanceIdentifier")
-parser.add_option("-a", "--access-key", dest="access_key", default=None,
+parser.add_option("-a", "--access-key", dest="access_key", default="",
                 help="AWS Access Key")
-parser.add_option("-k", "--secret-key", dest="secret_key", default=None,
+parser.add_option("-k", "--secret-key", dest="secret_key", default="",
                 help="AWS Secret Access Key")
 parser.add_option("-m", "--metric", dest="metric",
                 help="RDS cloudwatch metric")
@@ -21,11 +21,15 @@ parser.add_option("-r", "--region", dest="region", default="us-east-1"
 
 if (options.instance_id == None):
     parser.error("-i DBInstanceIdentifier is required")
+#if (options.access_key == None):
+#    parser.error("-a AWS Access Key is required")
+#if (options.secret_key == None):
+#    parser.error("-k AWS Secret Key is required")
 if (options.metric == None):
     parser.error("-m RDS cloudwatch metric is required")
 ###
 
-if (options.access_key == None) or (options.secret_key == None):
+if not options.access_key or not options.secret_key:
     use_roles = True
 else:
     use_roles = False
