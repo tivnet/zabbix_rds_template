@@ -68,7 +68,7 @@ if options.metric in metrics.keys():
   try:
           res = conn.get_metric_statistics(Namespace="AWS/RDS", MetricName=k, Dimensions=[{'Name': "DBInstanceIdentifier", 'Value': options.instance_id}], StartTime=start, EndTime=end, Period=60, Statistics=["Average"])
   except Exception as e:
-          print("status err Error running rds_stats: %s" % e.error_message)
+          print("status err Error running rds_stats: %s" % e)
           sys.exit(1)
   datapoints = res.get('Datapoints')
   if len(datapoints) == 0:
