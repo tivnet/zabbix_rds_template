@@ -43,8 +43,6 @@ metrics = {"CPUUtilization":{"type":"float", "value":None},
     "ReadThroughput":{"type":"float", "value":None},
     "DiskQueueDepth":{"type":"float", "value":None},
     "ReplicaLag":{"type":"int", "value":None},
-    "DiskQueueDepth":{"type":"float", "value":None},
-    "ReplicaLag":{"type":"int", "value":None},
     "NetworkReceiveThroughput":{"type":"float", "value":None},
     "NetworkTransmitThroughput":{"type":"float", "value":None},
     "FreeStorageSpace":{"type":"float", "value":None}}
